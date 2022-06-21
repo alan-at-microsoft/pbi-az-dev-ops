@@ -1,4 +1,8 @@
 # Starter pipeline
+- task: DeploymentPipelines-AddUser@1
+  inputs:
+    pipeline: 'OQezQkGdtnZTlYTRS9CnJQ%3D%3D'
+    userUpn: 'alan@lantz533.onmicrosoft.com'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -17,3 +21,8 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: Workspaces-AddUser@1
+  inputs:
+    workspace: '636f2659-62c0-44e6-b504-20aa85a01571'
+    userUpn: 'alan@lantz533.onmicrosoft.com'
+    permission: 'Contributor'
